@@ -1,0 +1,26 @@
+body{
+    background-color: aquamarine;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(6.1fr);
+    height: 400px;
+    border: 2px solid red;
+    background-color: beige;
+}
+.rows1,.rows2,.rows3{
+    border: 1px solid gold;
+    height: 200px;
+
+}
+.rows1{
+    /* grid-row-start: 1;
+    grid-row-end:2 ;
+
+    grid-column-start: 3;
+    grid-column-end: 5; */
+    grid-row: 1/2;
+    grid-column: 3/4;
+    background-color: brown;
+}
