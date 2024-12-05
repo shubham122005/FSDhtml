@@ -7,7 +7,7 @@ function App() {
       <div>
         <h2 style={{color:'red'}}> Hello React JS</h2>
         <div>
-          <Student />
+          <Student image={<img src={"https://cdn.dummyjson.com/recipe-images/1.webp "} />} name="Shubham Kumar"  roll="123" college="Abes Engineering college"/>
         </div>
       </div>
     </div>
