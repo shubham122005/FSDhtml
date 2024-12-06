@@ -7,6 +7,7 @@ function Student(props) {
         <table>
             <th style={{backgroundColor:'red', color:'white'}} colSpan={2}>Student Information</th>
             <tbody>
+                <tr><td colSpan={2}> {props.image}</td></tr>
                 <tr><td> Name:</td><td>{props.name}</td></tr>
                 <tr><td> Roll:</td><td>{props.roll}</td></tr>
                 <tr><td> College:</td><td>{props.college}</td></tr>
