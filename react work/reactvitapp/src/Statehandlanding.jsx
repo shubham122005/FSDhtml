@@ -7,6 +7,9 @@ function Statehandlanding() {
         // alert("Hello");
         setCount(count+20)
     }
+    function doDecreament(){
+      setCount(count-20)
+    }
   return (
     <div>
    
@@ -17,6 +20,10 @@ function Statehandlanding() {
         <button onClick={doIncrement}>Increament
 
         </button>
+        <div>
+          <br />
+          <button onClick={doDecreament}> Decreament</button>
+        </div>
 
     </div>
     </div>

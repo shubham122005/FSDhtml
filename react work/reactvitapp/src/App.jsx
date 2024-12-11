@@ -2,6 +2,7 @@ import React from 'react'
 import Student from './Student'
 
 import Statehandlanding from './Statehandlanding'
+import ImageManipulation from './ImageManipulation'
 
 function App() {
 //   const studentdata=[{
@@ -49,7 +50,8 @@ function App() {
 //     </div>
 //   )
 return(
-  <Statehandlanding/>
+  // <Statehandlanding/>
+  <ImageManipulation/>
 )
 }
 
