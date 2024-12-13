@@ -1,8 +1,10 @@
 import React from 'react'
 import Student from './Student'
-
 import Statehandlanding from './Statehandlanding'
 import ImageManipulation from './ImageManipulation'
+import UseEffectwork from './UseEffectwork'
+import Login from './assets/login'
+import Registration from './assets/registration'
 
 function App() {
 //   const studentdata=[{
@@ -51,7 +53,19 @@ function App() {
 //   )
 return(
   // <Statehandlanding/>
-  <ImageManipulation/>
+  // <ImageManipulation/>
+  
+
+    // <UseEffectwork/>
+    <div>
+      <h2>Login Form</h2>
+
+      <Login/>
+     <br></br>
+     <h2>Registration Form</h2>
+     <Registration/>
+    </div>
+  
 )
 }
 
