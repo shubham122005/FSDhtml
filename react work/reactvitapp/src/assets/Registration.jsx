@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function Registration() {
+function Registration({regdata}) {
 const[myname,setName]=useState();
 const[email,setEmail]=useState();
 const[password,setPassword]=useState();
@@ -17,7 +17,8 @@ function getData(e){
         myname,email,password
     }
 
-    setObject(dataObject);
+    // setObject(dataObject);
+    regdata(dataObject);
 
 
 
@@ -26,9 +27,9 @@ function getData(e){
 
   return (
     <div>
-        <div>
+        {/* <div>
             {JSON.stringify(data)}
-        </div>
+        </div> */}
 
 
         <form>

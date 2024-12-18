@@ -1,12 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Student from './Student'
 import Statehandlanding from './Statehandlanding'
 import ImageManipulation from './ImageManipulation'
 import UseEffectwork from './UseEffectwork'
 import Login from './assets/login'
 import Registration from './assets/registration'
+import{BrowserRouter,Routes,Route} from 'react-router-dom'
+import Mainlayout from './Mainlayout'
+import Dashboard from './Dashboard'
 
 function App() {
+  const[rdata,setrdata]=useState();
+
+
+
+
 //   const studentdata=[{
 //     image:"https://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/img/srixner.png ",
 //     name:"Shubham kumar",
@@ -52,18 +60,40 @@ function App() {
 //     </div>
 //   )
 return(
+
+  
+  
+
+  
+
   // <Statehandlanding/>
   // <ImageManipulation/>
   
 
     // <UseEffectwork/>
     <div>
-      <h2>Login Form</h2>
+     {JSON.stringify(rdata)}
 
-      <Login/>
+     <BrowserRouter>
+    <Routes>
+    <Route path='/' element={<Mainlayout/>}>
+      <Route path='/login' element={<Login logindata={rdata} />}/>
+
+      <Route path='/reg' element={<Registration regdata={setrdata} />}/>
+
+      </Route>
+
+      <Route path='/dashboard' element={<Dashboard/>}/>
+    </Routes>
+
+     </BrowserRouter>
+
+      {/* <h2>Login Form</h2>
+
+      <Login logindata={rdata}/>
      <br></br>
      <h2>Registration Form</h2>
-     <Registration/>
+     <Registration regdata={setrdata}/> */}
     </div>
   
 )
