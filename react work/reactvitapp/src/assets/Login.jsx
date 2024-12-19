@@ -31,14 +31,17 @@ const navigate=useNavigate();
     <div><form>
     <div class="form-group">
       <label for="exampleInputEmail1">Email address</label>
-      <input onChange={(e)=>setEmail(e.target.value)} type='email'/>
+      <input onChange={(e)=>setEmail(e.target.value)} type='email' class="form-control" id="exampleInputPassword1" placeholder=' Enter your Email-id'  />
      </div>
     <div class="form-group">
       <label for="exampleInputPassword1">Password</label>
       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"/>
+    </div><br></br>
+    <div>
+
+    <button type="submit" onClick={verification} class="btn btn-primary">Login</button>
     </div>
    
-    <button type="submit" onClick={verification} class="btn btn-primary">Login</button>
   </form></div>
   )
 }
